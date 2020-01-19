@@ -1,16 +1,5 @@
-/*  This example sketch is designed for use with Basic and Advanced Sensor Boards sold by BurgessWorld Custom Electronics
- *  The sketch uses an ESP8266 wifi module and a DHT temp/humidity sensor to upload temp/humidity data to a 
- *  thingspeak.com channel every 15 minutes.  
- *  It assumes a GREEN LED is attached to pin 5, and a RED LED is attached to pin 13.
- *  The LEDs can be disabled by commenting out "#define EnableLEDs" in the sketch below
- *  It is based on the ESP8266 wifi library available here:  https://github.com/itead/ITEADLIB_Arduino_WeeESP8266
- *  The DHT library available here:  https://github.com/adafruit/DHT-sensor-library/archive/master.zip
- *  And the Adadruit sensor library available here:  https://github.com/adafruit/Adafruit_Sensor/archive/master.zip
- *  The sketch takes a sensor reading every 15 minutes and uploads it to the defined thingspeek channel
- *  After uploading the data, the ESP8266 module is put to sleep until it is time to read the sensor again
- *  You should define your local WiFi settings, and your thingspeak channel write API key.
- *  You can add additional sensors and upload additional data by including the appropriate library
- *  and tweeking the "Build Data Package" section in the sendMessage function
+/*  This example sketch is designed to test communications between the Teensy and ESP8266 on the Arduino-Teensy board.
+ *  You should define your local WiFi settings.  No external library is required for this sketch to work.
  *  This sketch is provided AS-IS with no implied warranty for fitness of purpose
  *  You may modify this sketch to meet your needs
  */
